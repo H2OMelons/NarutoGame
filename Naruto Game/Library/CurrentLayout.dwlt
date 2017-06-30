@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 56
+  controlID: 12
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 55
+  controlID: 11
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,7 +232,7 @@ MonoBehaviour:
     height: 460
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
   - {fileID: 20}
@@ -240,8 +240,8 @@ MonoBehaviour:
   - {fileID: 14}
   - {fileID: 13}
   - {fileID: 11}
-  m_Selected: 1
-  m_LastSelected: 4
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -383,7 +383,7 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 1107190748375548176, guid: e0863ebbf6a6f0543b7df8ad94c81435, type: 2}
     m_ValueSerializationHelper:
-    - {x: 439.40002, y: 228.80005}
+    - {x: 444.2, y: 278}
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 9100000, guid: e0863ebbf6a6f0543b7df8ad94c81435,
     type: 2}
@@ -456,9 +456,9 @@ MonoBehaviour:
     height: 710
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 72260000
-    m_LastClickedID: 9842
-    m_ExpandedIDs: b6b0fdffe49affffcafbffff0000000072260000
+    m_SelectedIDs: 002c0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 4a02ffff1ec3ffffcafbffff000000008226000086260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -507,7 +507,7 @@ MonoBehaviour:
     y: 92
     width: 316
     height: 710
-  m_ScrollPosition: {x: 0, y: 248.95508}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 201
@@ -551,19 +551,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Animations/Animation/Naruto
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 41
   m_LastFolders:
-  - Assets/Animations/Animation/Naruto
+  - Assets/Scripts
   m_LastFoldersGridSize: 41
   m_LastProjectPath: C:\Users\chenr\Documents\GitHub\NarutoGame\Naruto Game
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 58260000
-    m_LastClickedID: 9816
-    m_ExpandedIDs: 00000000ec2400002825000066250000a2250000f8250000ffffff7f
+    m_SelectedIDs: 2e260000
+    m_LastClickedID: 9774
+    m_ExpandedIDs: 00000000ec240000a6250000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -591,7 +591,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ec240000a2250000f8250000
+    m_ExpandedIDs: 00000000ec2400002a25000068250000a6250000fc250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -619,7 +619,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 2044000044430000e6430000ee250000b8250000
+    m_ExpandedInstanceIDs: 2044000044430000e6430000ee250000b82500006a2700005027000082270000662700005c2700006e27000086270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -690,7 +690,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
@@ -702,18 +702,18 @@ MonoBehaviour:
       y: 17
       width: 877
       height: 422
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 438.5, y: 211}
+    m_Scale: {x: 1.0599452, y: 1.0599452}
+    m_Translation: {x: 438.5, y: 202.72755}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -438.5
-      y: -211
-      width: 877
-      height: 422
+      x: -413.70062
+      y: -191.2623
+      width: 827.40125
+      height: 398.1338
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
@@ -754,9 +754,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.6751474, y: -0.40749598, z: 0.081300974}
+    m_Target: {x: -0.0821844, y: -0.21811035, z: 0.08105469}
     speed: 2
-    m_Value: {x: 0.6751474, y: -0.40749598, z: 0.081300974}
+    m_Value: {x: -0.0821844, y: -0.21811035, z: 0.08105469}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -783,14 +783,14 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.4126225
+    m_Target: 2.3885803
     speed: 2
-    m_Value: 3.4126225
+    m_Value: 2.3885803
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
-  m_LastSceneViewRotation: {x: 0.031039074, y: 0.6944795, z: 0.030013993, w: -0.7182157}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
