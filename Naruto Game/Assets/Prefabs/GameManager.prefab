@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1845429956975828}
+  m_IsPrefabParent: 1
+--- !u!1 &1845429956975828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4591404983011318}
+  - component: {fileID: 114976816958072814}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4591404983011318
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845429956975828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114976816958072814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845429956975828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32ffc46dc268e5498f574642d39fba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgrounds:
+  - {fileID: 1648474388627362, guid: fe24d5a860462f744896d68e34c8d935, type: 2}
+  - {fileID: 1879404584071712, guid: 83ab7c2f9797eb04bb370410e318ae3c, type: 2}
+  - {fileID: 1705996214442194, guid: 3e15a910ecb198a41a96a7f33b9e788e, type: 2}
+  - {fileID: 1853934066530724, guid: afeb7c3bc8c88e248b5164971e883ebf, type: 2}
+  - {fileID: 1290899884453224, guid: 49a700b684e204e4093f8e91ead203bd, type: 2}
+  - {fileID: 1428410914299728, guid: 96ba9ce2fceea3b45942d254e321b8c2, type: 2}
+  playerPrefabs:
+  - {fileID: 1317508090435192, guid: 0f627d9a62ed38342b230e2991ffa9f1, type: 2}
+  - {fileID: 1203663407412312, guid: 1e55325c1a03594449cb89224fda2115, type: 2}
+  - {fileID: 1804028846817264, guid: b021359a226f6584bb23273b3ad55673, type: 2}
+  - {fileID: 1058670916042706, guid: e653151fbdfc4f44cb1890beda2a8013, type: 2}
+  - {fileID: 1409819117966728, guid: 1fd0a5c7d646c564b98983170cc3ce74, type: 2}
+  - {fileID: 1378671189569454, guid: b79e8c679b86c5847aafdd7d35933c00, type: 2}
+  - {fileID: 1876625726746118, guid: 308ea669973189743af2e9eb4c175e4b, type: 2}
+  - {fileID: 1502399058461078, guid: f7bc8dac83ece694c800365e9a2f59a3, type: 2}
+  - {fileID: 1756880674619638, guid: 343f8a3a8d284514cb3e399db4f4714f, type: 2}
+  players:
+  - spawnPoint: {fileID: 4058372404258404, guid: b5521d0f4f7e1c843a55572326c9c78b,
+      type: 2}
+    playerNumber: 1
+    instance: {fileID: 0}
+  - spawnPoint: {fileID: 4029754838631786, guid: 0d0e438cdfce0b04eb5ffb1b0f48b30f,
+      type: 2}
+    playerNumber: 2
+    instance: {fileID: 0}
+  startDelay: 3
+  endDelay: 3
+  sceneSelection: 0
+  player1Choice: 0
+  player2Choice: 0

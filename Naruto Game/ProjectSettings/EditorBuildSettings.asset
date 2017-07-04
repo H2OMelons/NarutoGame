@@ -4,4 +4,34 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PersistentScene.unity
+    guid: 895070a4ff5b9634c88a81e067a6a806
+  - enabled: 1
+    path: Assets/Scenes/PlayerChooser.unity
+    guid: 0e68b5db2dd5eb0408dcf41d2ae57ddc
+  - enabled: 1
+    path: Assets/Scenes/BackgroundChooser.unity
+    guid: 8926c3d861c344745bfe3927b833e7a4
+  - enabled: 0
+    path: Assets/Scenes/Main.unity
+    guid: f4f686be25f202649b192047e4127066
+  - enabled: 1
+    path: Assets/Scenes/Boss.unity
+    guid: 6fe0eac0a91e81b42b38d47560cdd2f8
+  - enabled: 1
+    path: Assets/Scenes/Bridge.unity
+    guid: a493111f0251a78469ab75414c9f17a7
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 673a858c4bc918d42846f72fc3f07106
+  - enabled: 1
+    path: Assets/Scenes/Lab1.unity
+    guid: 02f317b242ae8664c921158fcbe8ffdf
+  - enabled: 1
+    path: Assets/Scenes/Lab2.unity
+    guid: afe823c942b5fb640adb763c67983a35
+  - enabled: 1
+    path: Assets/Scenes/SasukeLair.unity
+    guid: ab3ba130b7ddcb14582a8c1430c3d486
