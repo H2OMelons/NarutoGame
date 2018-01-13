@@ -99,7 +99,6 @@ public class PlayerController : MonoBehaviour {
         attack3Name = "Attack3_" + playerNumber;
         weaponName = "Weapon" + playerNumber;
         playerState = idlePS;
-        Debug.Log("Player number is " + playerNumber);
         if (playerNumber == 1)
         {
             facingRight = true;

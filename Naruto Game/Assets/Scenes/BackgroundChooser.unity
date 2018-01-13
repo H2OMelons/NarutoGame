@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22f8633b5a6567f45a87c71e1751b3ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 2109799576}
+  manager: {fileID: 114976816958072814, guid: f7d7dc076222a5c41a76b5098ff3a72e, type: 2}
   bgController: {fileID: 1059866691}
 --- !u!1 &398915176
 GameObject:
@@ -1511,9 +1511,3 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f7d7dc076222a5c41a76b5098ff3a72e, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &2109799576 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114976816958072814, guid: f7d7dc076222a5c41a76b5098ff3a72e,
-    type: 2}
-  m_PrefabInternal: {fileID: 2109799575}
-  m_Script: {fileID: 11500000, guid: e32ffc46dc268e5498f574642d39fba4, type: 3}

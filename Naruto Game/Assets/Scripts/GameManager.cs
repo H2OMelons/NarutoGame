@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour {
 
     private void SpawnPlayers()
     {
+        Debug.Log(player1Choice + " : " + player2Choice);
         players[0].instance = Instantiate(playerPrefabs[player1Choice], players[0].spawnPoint.position, players[0].spawnPoint.rotation);
         players[0].playerNumber = 1;
         players[0].Setup();
@@ -67,7 +68,6 @@ public class GameManager : MonoBehaviour {
 
     public void TransitionToPlay()
     {
-        transitioningToPlay = true;
         SceneManager.LoadScene(backgrounds[sceneSelection].name);
     }
 
@@ -83,10 +83,7 @@ public class GameManager : MonoBehaviour {
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (transitioningToPlay)
-        {
-            transitioningToPlay = false;
-            SpawnPlayers();
-        }
+        transitioningToPlay = false;
+        SpawnPlayers();
     }
 }

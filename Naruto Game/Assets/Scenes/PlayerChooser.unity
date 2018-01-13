@@ -2849,7 +2849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 839c6789b85101a48ad926c0dece7c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 1685274250}
+  manager: {fileID: 114976816958072814, guid: f7d7dc076222a5c41a76b5098ff3a72e, type: 2}
   selectionManager:
   - {fileID: 726115845}
   - {fileID: 912575406}
@@ -5628,12 +5628,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1665505985}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1685274250 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114976816958072814, guid: f7d7dc076222a5c41a76b5098ff3a72e,
-    type: 2}
-  m_PrefabInternal: {fileID: 668583096}
-  m_Script: {fileID: 11500000, guid: e32ffc46dc268e5498f574642d39fba4, type: 3}
 --- !u!1 &1708495930
 GameObject:
   m_ObjectHideFlags: 0
