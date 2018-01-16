@@ -14,14 +14,14 @@ public class GameManager : MonoBehaviour {
     public float endDelay = 3f;             // Amount of time to wait at the end of the round
 
     [HideInInspector] public int sceneSelection;
-    [HideInInspector] public int player1Choice;
-    [HideInInspector] public int player2Choice;
+    [HideInInspector] public static int player1Choice;
+    [HideInInspector] public static int player2Choice;
 
     private WaitForSeconds startWait;       // Delay for when the game starts
     private WaitForSeconds endWait;         // Delay for when the game ends
     private PlayerManager winner;           // Reference to the winner of the fight
 
-    private bool transitioningToPlay;
+    private static bool transitioningToPlay = false;
 
     private void Awake()
     {
@@ -46,7 +46,6 @@ public class GameManager : MonoBehaviour {
 
     private void SpawnPlayers()
     {
-        Debug.Log(player1Choice + " : " + player2Choice);
         players[0].instance = Instantiate(playerPrefabs[player1Choice], players[0].spawnPoint.position, players[0].spawnPoint.rotation);
         players[0].playerNumber = 1;
         players[0].Setup();
@@ -68,6 +67,7 @@ public class GameManager : MonoBehaviour {
 
     public void TransitionToPlay()
     {
+        transitioningToPlay = true;
         SceneManager.LoadScene(backgrounds[sceneSelection].name);
     }
 
@@ -83,7 +83,17 @@ public class GameManager : MonoBehaviour {
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        transitioningToPlay = false;
-        SpawnPlayers();
+        if (transitioningToPlay)
+        {
+            transitioningToPlay = false;
+            SpawnPlayers();
+        }
+        
+    }
+
+    public void setPlayerSelections(int p1, int p2)
+    {
+        player1Choice = p1;
+        player2Choice = p2;
     }
 }

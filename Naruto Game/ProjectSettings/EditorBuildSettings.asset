@@ -5,17 +5,17 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/PersistentScene.unity
+  - enabled: 0
+    path: 
     guid: 895070a4ff5b9634c88a81e067a6a806
-  - enabled: 1
-    path: Assets/Scenes/PlayerChooser.unity
-    guid: 0e68b5db2dd5eb0408dcf41d2ae57ddc
   - enabled: 1
     path: Assets/Scenes/BackgroundChooser.unity
     guid: 8926c3d861c344745bfe3927b833e7a4
+  - enabled: 1
+    path: Assets/Scenes/PlayerChooser.unity
+    guid: 0e68b5db2dd5eb0408dcf41d2ae57ddc
   - enabled: 0
-    path: Assets/Scenes/Main.unity
+    path: 
     guid: f4f686be25f202649b192047e4127066
   - enabled: 1
     path: Assets/Scenes/Boss.unity

@@ -57,61 +57,45 @@ public class PlayerSelectionManager : MonoBehaviour {
     {
         if (horizontalValue > 0)
         {
-            Debug.Log("User hit d key");
             PreSetActiveIcons();
-            Debug.Log("Current selection is " + currentSelection);
             currentSelection++;
-            Debug.Log("Current selection set to be " + currentSelection);
             if (currentSelection >= icons.Length)
             {
                 currentSelection = 0;
             }
 
-            Debug.Log("Selection updated to be " + currentSelection);
 
             PostSetActiveIcons();
             
         }
         else if (horizontalValue < 0)
         {
-            Debug.Log("User hit a key");
             PreSetActiveIcons();
-            Debug.Log("Current selection is " + currentSelection);
             currentSelection--;
-            Debug.Log("Current selection set to be " + currentSelection);
             if (currentSelection < 0)
             {
                 currentSelection = icons.Length - 1;
             }
-            Debug.Log("Selection updated to be " + currentSelection);
             PostSetActiveIcons();
         }
         else if (verticalValue > 0)
         {
-            Debug.Log("User hit w key");
             PreSetActiveIcons();
-            Debug.Log("Current selection is " + currentSelection);
             currentSelection += numIconsPerRow;
-            Debug.Log("Current selection set to be " + currentSelection);
             if (currentSelection >= icons.Length)
             {
                 currentSelection -= icons.Length;
             }
-            Debug.Log("Selection updated to be " + currentSelection);
             PostSetActiveIcons();
         }
         else if (verticalValue < 0)
         {
-            Debug.Log("User hit s key");
             PreSetActiveIcons();
-            Debug.Log("Current selection is " + currentSelection);
             currentSelection -= numIconsPerRow;
-            Debug.Log("Current selection set to be " + currentSelection);
             if (currentSelection < 0)
             {
                 currentSelection += icons.Length;
             }
-            Debug.Log("Selection updated to be " + currentSelection);
             PostSetActiveIcons();
         }
         horizontalValue = 0;

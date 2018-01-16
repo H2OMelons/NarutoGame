@@ -9,8 +9,7 @@ public class PlayButton : MonoBehaviour {
 
     private void OnMouseUp()
     {
-        manager.player1Choice = selectionManager[0].GetCurrentSelection();
-        manager.player2Choice = selectionManager[1].GetCurrentSelection();
+        manager.setPlayerSelections(selectionManager[0].GetCurrentSelection(), selectionManager[1].GetCurrentSelection());
         manager.TransitionToPlay();
     }
 }
