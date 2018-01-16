@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour {
 
     public GameObject[] backgrounds;
     public GameObject[] playerPrefabs;      // Reference to the player prefabs that the player will control
+    public GameObject[] player1Names;
+    public GameObject[] player2Names;
     public PlayerManager[] players;         // Collection of managers to enable/disable the players
     public float startDelay = 3f;           // Amount of time to wait at the beginning of the round
     public float endDelay = 3f;             // Amount of time to wait at the end of the round
@@ -49,9 +51,11 @@ public class GameManager : MonoBehaviour {
         players[0].instance = Instantiate(playerPrefabs[player1Choice], players[0].spawnPoint.position, players[0].spawnPoint.rotation);
         players[0].playerNumber = 1;
         players[0].Setup();
+        Instantiate(player1Names[player1Choice]);
         players[1].instance = Instantiate(playerPrefabs[player2Choice], players[1].spawnPoint.position, players[1].spawnPoint.rotation);
         players[1].playerNumber = players.Length;
         players[1].Setup();
+        Instantiate(player2Names[player2Choice]);
     }
 
     public void TransitionToCharacterSelection()

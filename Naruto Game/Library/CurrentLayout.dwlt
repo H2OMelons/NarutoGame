@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 879
     height: 731
-  m_MinSize: {x: 232, y: 471}
-  m_MaxSize: {x: 10002, y: 14021}
+  m_MinSize: {x: 232, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 45
 --- !u!114 &4
@@ -92,7 +92,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 707, y: 471}
-  m_MaxSize: {x: 18002, y: 14021}
+  m_MinSize: {x: 711, y: 492}
+  m_MaxSize: {x: 18006, y: 14042}
   vertical: 0
-  controlID: 117
+  controlID: 94
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -178,8 +178,8 @@ MonoBehaviour:
     y: 0
     width: 339
     height: 731
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -456,9 +456,9 @@ MonoBehaviour:
     height: 710
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 72270000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 3474fffffc77ffff227effff9e7effff8c7fffffa27fffffb87fffffce7fffffe47ffffffa7fffff1880ffff2080ffffce84ffff7a88ffffbca8ffff38a9ffff22aaffff34aaffff46aaffff58aaffff6aaaffff7caaffff96aaffff9aaaffffc0f9ffffcafbffff0000000022330000
+    m_ExpandedIDs: 104dffff2c61ffffd262ffffc864ffff6e66ffff3a68ffffdc69ffff926bffff066effff1074ffff4495ffff9ab9ffff24c5ffff2ac5ffff2ec5fffff6dcffffeae1ffffe8eaffff0efaffffcafbfffff4ffffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -551,19 +551,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Sprites
+    - Assets/Prefabs/Name
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Prefabs/Name
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\chenr\Documents\GitHub\NarutoGame\Naruto Game
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 75}
-    m_SelectedIDs: 06260000
-    m_LastClickedID: 9734
-    m_ExpandedIDs: 00000000fc240000242500003625000006260000e0290000402b0000342c00006e2d000002330000ffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: d2300000
+    m_LastClickedID: 12498
+    m_ExpandedIDs: 00000000fc240000242500003625000006260000e0290000402b0000342c00006e2d00000a2e000062300000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -591,7 +591,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fc2400002425000006260000e0290000402b0000342c00006e2d000002330000
+    m_ExpandedIDs: 00000000fc240000242500003625000006260000e0290000402b0000342c00006e2d000062300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -619,7 +619,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 2044000044430000e6430000ee250000b82500006a2700005027000082270000662700005c2700006e270000862700002c2800006e360000ce360000f2360000e6360000de360000ca360000c6360000da36000046370000623700006e3700004e3700006a3700003e3700004a370000423700005e370000ca3700005237000056370000da37000066370000c6370000ae370000de370000ce370000e6370000ba370000d2370000d6370000b2370000c2370000e2370000be370000b6370000b03b000062360000ee360000f63600007236000022360000
+    m_ExpandedInstanceIDs: 2044000044430000e6430000ee250000b82500006a2700005027000082270000662700005c2700006e270000862700002c2800006e360000ce360000f2360000e6360000de360000ca360000c6360000da36000046370000623700006e3700004e3700006a3700003e3700004a370000423700005e370000ca3700005237000056370000da37000066370000c6370000ae370000de370000ce370000e6370000ba370000d2370000d6370000b2370000c2370000e2370000be370000b6370000b03b000062360000ee360000f63600007236000022360000222e000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -749,14 +749,14 @@ MonoBehaviour:
     width: 877
     height: 439
   m_SceneLighting: 1
-  lastFramingTime: 119.80962052420638
-  m_2DMode: 0
+  lastFramingTime: 591.2343596358328
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.0791088, y: -0.3851909, z: -1.0329409}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: -1.0791088, y: -0.3851909, z: -1.0329409}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -771,25 +771,25 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
   m_Rotation:
-    m_Target: {x: 0.012308548, y: 0.009902542, z: -0.00012192459, w: 0.99987525}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.012308548, y: 0.009902542, z: -0.00012192459, w: 0.99987525}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.6622663
+    m_Target: 4.3043184
     speed: 2
-    m_Value: 3.6622663
+    m_Value: 4.3043184
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}

@@ -10,7 +10,6 @@ public class ContinueButton : MonoBehaviour {
 
     private void OnMouseUp()
     {
-        Debug.Log("Pressed button");
         manager.sceneSelection = bgController.GetCurrentBGIndex();
         manager.TransitionToCharacterSelection();
     }
