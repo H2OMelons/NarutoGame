@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour {
     private bool queueAttackCombo3;
 
     private bool inputLocked = false;
+    private bool gameStopped = true;
 
     private void Awake()
     {
@@ -108,19 +109,21 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        movementInputValue = Input.GetAxisRaw(horizontalAxisName);
-        jumpInputValue = Input.GetAxisRaw(verticalAxisName) > 0;
-        attack1InputValue = Input.GetAxisRaw(attack1Name) > 0;
-        attack2InputValue = Input.GetAxisRaw(attack2Name) > 0;
-        attack3InputValue = Input.GetAxisRaw(attack3Name) > 0;
-        weaponInputValue = Input.GetAxisRaw(weaponName) > 0;
-        if (attackCombo1TimeLeft > 0)
-        {
-            attackCombo1TimeLeft -= Time.deltaTime;
-        }
-        if (attackCombo2TimeLeft > 0)
-        {
-            attackCombo2TimeLeft -= Time.deltaTime;
+        if (!gameStopped) {
+            movementInputValue = Input.GetAxisRaw(horizontalAxisName);
+            jumpInputValue = Input.GetAxisRaw(verticalAxisName) > 0;
+            attack1InputValue = Input.GetAxisRaw(attack1Name) > 0;
+            attack2InputValue = Input.GetAxisRaw(attack2Name) > 0;
+            attack3InputValue = Input.GetAxisRaw(attack3Name) > 0;
+            weaponInputValue = Input.GetAxisRaw(weaponName) > 0;
+            if (attackCombo1TimeLeft > 0)
+            {
+                attackCombo1TimeLeft -= Time.deltaTime;
+            }
+            if (attackCombo2TimeLeft > 0)
+            {
+                attackCombo2TimeLeft -= Time.deltaTime;
+            }
         }
         CalculatePlayerState();
 	}
@@ -128,7 +131,11 @@ public class PlayerController : MonoBehaviour {
     private void CalculatePlayerState()
     {
         // If player hit the jump key
-        if (jumpInputValue)
+        if (gameStopped)
+        {
+            playerState = idlePS;
+        }
+        else if (jumpInputValue)
         {
             if (isJumping)
             {
@@ -358,5 +365,29 @@ public class PlayerController : MonoBehaviour {
         inputLocked = false;
         queueAttackCombo3 = false;
         playerState = idlePS;
+    }
+
+    public void StartGame()
+    {
+        gameStopped = false;
+    }
+
+    public void Reset()
+    {
+        jumpInputValue = false;
+        attack1InputValue = false;
+        attack2InputValue = false;
+        attack3InputValue = false;
+        weaponInputValue = false;
+        facingRight = false;
+        isRunning = false;
+        isJumping = false;
+        isIdle = true;
+        isAttackCombo1 = false;
+        isAttackCombo2 = false;
+        isAttackCombo3 = false;
+        queueAttackCombo2 = false;
+        queueAttackCombo3 = false;
+        gameStopped = true;
     }
 }

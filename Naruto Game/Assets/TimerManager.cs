@@ -8,23 +8,28 @@ public class TimerManager : MonoBehaviour {
     private const int START_TIME = 99;
     private int startTime;
 
-    public GameObject timer;
+    private Text timer;
 
 	// Use this for initialization
 	void Start () {
-        //this.enabled = false;
-        startTime = (int)Time.time;
+        this.enabled = false;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        int currTime = ((int)Time.time) - startTime;
+        int currTime = START_TIME - ((int)Time.time - startTime);
         string currTimeStr = currTime.ToString();
-        timer.GetComponent<Text>().text = currTimeStr;
+        timer.text = currTimeStr;
+        if (currTimeStr.Equals("0"))
+        {
+            this.EndTimer();
+            gameObject.GetComponent<GameManager>().EndGame();
+        }
 	}
 
     public void StartTimer()
     {
+        timer = GameObject.Find("TimerText").GetComponent<Text>();
         startTime = (int)Time.time;
         this.enabled = true;
     }
@@ -36,11 +41,11 @@ public class TimerManager : MonoBehaviour {
 
     public void RestartTimer()
     {
-
+        SetTimer(0);
     }
 
     private void SetTimer(int time)
     {
-
+        startTime = (int)Time.time - time;
     }
 }

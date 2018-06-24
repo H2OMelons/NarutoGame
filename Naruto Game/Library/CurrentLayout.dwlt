@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -92,7 +92,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -230,8 +230,8 @@ MonoBehaviour:
     y: 0
     width: 879
     height: 460
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -383,7 +383,7 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 1107190748375548176, guid: e0863ebbf6a6f0543b7df8ad94c81435, type: 2}
     m_ValueSerializationHelper:
-    - {x: 608.2, y: 486.40002}
+    - {x: 814.2, y: 851.4}
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 9100000, guid: e0863ebbf6a6f0543b7df8ad94c81435,
     type: 2}
@@ -456,9 +456,9 @@ MonoBehaviour:
     height: 710
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b0fbffff
-    m_LastClickedID: -1104
-    m_ExpandedIDs: cafbffff00000000
+    m_SelectedIDs: 3a260000
+    m_LastClickedID: 0
+    m_ExpandedIDs: f429ffff702bffff822bffff9431ffff1037ffff8266ffff5e6cffff706cffff027affff1e7dffff287fffff6281ffff6e83ffff5a85ffff4e87ffff928affffb08cffff9eccffff6acdffff0ccfffffa4d0ffff38d7ffff26d9ffff40e6ffffb6f9ffffcafbffff00000000fe7b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -551,18 +551,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts/PlayerScripts
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts/PlayerScripts
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\chenr\Documents\GitHub\NarutoGame\Naruto Game
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2e250000
-    m_LastClickedID: 9518
+    scrollPos: {x: 0, y: 107}
+    m_SelectedIDs: 3a260000
+    m_LastClickedID: 9786
     m_ExpandedIDs: 00000000002500002e2500004025000010260000222a0000882b00008a2c0000ca2d00007e2e0000a2310000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -783,9 +783,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.3043184
+    m_Target: 4.71817
     speed: 2
-    m_Value: 4.3043184
+    m_Value: 4.71817
   m_Ortho:
     m_Target: 1
     speed: 2

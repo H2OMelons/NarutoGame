@@ -40,7 +40,13 @@ public class PlayerManager{
      */ 
     public void EnableControl()
     {
+        playerController.StartGame();
         playerController.enabled = true;
         weaponThrow.enabled = true;
+    }
+
+    public void Reset()
+    {
+        playerController.Reset();
     }
 }
