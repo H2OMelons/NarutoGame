@@ -1431,11 +1431,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114976816958072814, guid: f7d7dc076222a5c41a76b5098ff3a72e,
-        type: 2}
-      propertyPath: backgrounds.Array.size
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 4591404983011318, guid: f7d7dc076222a5c41a76b5098ff3a72e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1468,46 +1463,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 1845429956975828, guid: f7d7dc076222a5c41a76b5098ff3a72e, type: 2}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 114976816958072814, guid: f7d7dc076222a5c41a76b5098ff3a72e,
-        type: 2}
-      propertyPath: backgrounds.Array.data[0]
-      value: 
-      objectReference: {fileID: 1648474388627362, guid: fe24d5a860462f744896d68e34c8d935,
-        type: 2}
-    - target: {fileID: 114976816958072814, guid: f7d7dc076222a5c41a76b5098ff3a72e,
-        type: 2}
-      propertyPath: backgrounds.Array.data[1]
-      value: 
-      objectReference: {fileID: 1879404584071712, guid: 83ab7c2f9797eb04bb370410e318ae3c,
-        type: 2}
-    - target: {fileID: 114976816958072814, guid: f7d7dc076222a5c41a76b5098ff3a72e,
-        type: 2}
-      propertyPath: backgrounds.Array.data[2]
-      value: 
-      objectReference: {fileID: 1705996214442194, guid: 3e15a910ecb198a41a96a7f33b9e788e,
-        type: 2}
-    - target: {fileID: 114976816958072814, guid: f7d7dc076222a5c41a76b5098ff3a72e,
-        type: 2}
-      propertyPath: backgrounds.Array.data[3]
-      value: 
-      objectReference: {fileID: 1853934066530724, guid: afeb7c3bc8c88e248b5164971e883ebf,
-        type: 2}
-    - target: {fileID: 114976816958072814, guid: f7d7dc076222a5c41a76b5098ff3a72e,
-        type: 2}
-      propertyPath: backgrounds.Array.data[4]
-      value: 
-      objectReference: {fileID: 1290899884453224, guid: 49a700b684e204e4093f8e91ead203bd,
-        type: 2}
-    - target: {fileID: 114976816958072814, guid: f7d7dc076222a5c41a76b5098ff3a72e,
-        type: 2}
-      propertyPath: backgrounds.Array.data[5]
-      value: 
-      objectReference: {fileID: 1428410914299728, guid: 96ba9ce2fceea3b45942d254e321b8c2,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f7d7dc076222a5c41a76b5098ff3a72e, type: 2}
   m_IsPrefabParent: 0
