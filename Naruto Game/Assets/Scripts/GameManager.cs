@@ -54,12 +54,10 @@ public class GameManager : MonoBehaviour {
         players[0].instance = Instantiate(playerPrefabs[player1Choice], players[0].spawnPoint.position, players[0].spawnPoint.rotation);
         players[0].playerNumber = 1;
         players[0].Setup();
-        //players[0].EnableControl();
         Instantiate(player1Names[player1Choice]);
         players[1].instance = Instantiate(playerPrefabs[player2Choice], players[1].spawnPoint.position, players[1].spawnPoint.rotation);
         players[1].playerNumber = players.Length;
         players[1].Setup();
-        //players[1].EnableControl();
         Instantiate(player2Names[player2Choice]);
         timerManager.StartCountDown();
     }
