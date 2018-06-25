@@ -12,6 +12,8 @@ public class PlayerManager{
 
     private PlayerController playerController;      // Reference to the player controller script
     private WeaponThrow weaponThrow;                // Reference to the weapon throwing script
+    private GameManager gameManager;
+    private Action<float> managerCallback;
 
     /**
      * Setup() sets up the player 
@@ -24,6 +26,8 @@ public class PlayerManager{
 
         // Set the player numbers for the scripts
         playerController.playerNumber = playerNumber;
+
+        playerController.SetPlayerManager(this);
     }
 
     /**
@@ -48,5 +52,20 @@ public class PlayerManager{
     public void Reset()
     {
         playerController.Reset();
+    }
+
+    public void SetAction(Action<float> action)
+    {
+        this.managerCallback = action;
+    }
+
+    public void InflictDamage(float amt)
+    {
+        this.managerCallback(amt);
+    }
+
+    public void TakeDamage(bool takeDamage)
+    {
+
     }
 }

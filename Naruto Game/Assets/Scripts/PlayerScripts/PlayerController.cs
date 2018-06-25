@@ -70,6 +70,10 @@ public class PlayerController : MonoBehaviour {
     private bool inputLocked = false;
     private bool gameStopped = true;
 
+    private bool inflictDmg1, inflictDmg2, inflictDmg3;
+
+    private PlayerManager playerManager;
+
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -156,30 +160,32 @@ public class PlayerController : MonoBehaviour {
             }
         }
         // If player hit attack combo 1 key then set player state to be attack combo 1
-        else if (attack1InputValue)
+        else if (attack1InputValue && !isAttackCombo1)
         {
             if (!isJumping)
             {
                 playerState = attackCombo1PS;
-                
+                inflictDmg1 = true;
             }
         }
         // If player hit attack combo 2 key then set player state to be attack combo 2
         // if the previous game state was attack combo 1
-        else if (attack2InputValue)
+        else if (attack2InputValue && !isAttackCombo2)
         {
             if (attackCombo1TimeLeft > 0)
             {
                 queueAttackCombo2 = true;
+                inflictDmg2 = true;
             }
         }
         // If player hit attack combo 3 key then set pllayer state to be attack combo 3
         // if the previous game state was attack combo 2
-        else if (attack3InputValue)
+        else if (attack3InputValue && !isAttackCombo3)
         {
             if (attackCombo2TimeLeft > 0)
             {
                 queueAttackCombo3 = true;
+                inflictDmg3 = true;
             }
         }
         // If player hit the left/right key
@@ -296,6 +302,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Floor")
@@ -306,6 +313,51 @@ public class PlayerController : MonoBehaviour {
                 isIdle = true;
                 animator.SetTrigger(idleTriggerName);
             } 
+        }
+        if(collision.gameObject.tag == "Player")
+        {
+            
+            if (playerState.Equals(attackCombo1PS) && inflictDmg1)
+            {
+                playerManager.InflictDamage(5f);
+                inflictDmg1 = false;
+            }
+            else if (playerState.Equals(attackCombo2PS) && inflictDmg2)
+            {
+                playerManager.InflictDamage(10f);
+                inflictDmg2 = false;
+            }
+            else if (playerState.Equals(attackCombo3PS) && inflictDmg3)
+            {
+                playerManager.InflictDamage(15f);
+                inflictDmg3 = false;
+            }
+            else
+            {
+                playerManager.TakeDamage(true);
+            }
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            if (playerState.Equals(attackCombo1PS) && inflictDmg1)
+            {
+                playerManager.InflictDamage(5f);
+                inflictDmg1 = false;
+            }
+            else if (playerState.Equals(attackCombo2PS) && inflictDmg2)
+            {
+                playerManager.InflictDamage(10f);
+                inflictDmg2 = false;
+            }
+            else if (playerState.Equals(attackCombo3PS) && inflictDmg3)
+            {
+                playerManager.InflictDamage(15f);
+                inflictDmg3 = false;
+            }
         }
     }
 
@@ -389,5 +441,10 @@ public class PlayerController : MonoBehaviour {
         queueAttackCombo2 = false;
         queueAttackCombo3 = false;
         gameStopped = true;
+    }
+
+    public void SetPlayerManager(PlayerManager manager)
+    {
+        this.playerManager = manager;
     }
 }

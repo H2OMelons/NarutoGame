@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour {
     private static bool transitioningToPlay = false;
 
     private TimerManager timerManager;
+    private HealthColorManager player1Health, player2Health;
 
     private void Awake()
     {
@@ -54,12 +55,25 @@ public class GameManager : MonoBehaviour {
         players[0].instance = Instantiate(playerPrefabs[player1Choice], players[0].spawnPoint.position, players[0].spawnPoint.rotation);
         players[0].playerNumber = 1;
         players[0].Setup();
+        players[0].SetAction(Player1InflictDamage);
         Instantiate(player1Names[player1Choice]);
         players[1].instance = Instantiate(playerPrefabs[player2Choice], players[1].spawnPoint.position, players[1].spawnPoint.rotation);
         players[1].playerNumber = players.Length;
         players[1].Setup();
+        players[1].SetAction(Player2InflictDamage);
         Instantiate(player2Names[player2Choice]);
+        
+    }
+
+    private void StartCountdown()
+    {
         timerManager.StartCountDown();
+    }
+
+    private void SetUpHealthbars()
+    {
+        player1Health = GameObject.Find("Player1HealthBar").GetComponent<HealthColorManager>();
+        player2Health = GameObject.Find("Player2HealthBar").GetComponent<HealthColorManager>();
     }
 
     public void TransitionToCharacterSelection()
@@ -94,7 +108,9 @@ public class GameManager : MonoBehaviour {
         if (transitioningToPlay)
         {
             transitioningToPlay = false;
+            SetUpHealthbars();
             SpawnPlayers();
+            StartCountdown();
         }
         
     }
@@ -117,5 +133,15 @@ public class GameManager : MonoBehaviour {
     {
         players[0].EnableControl();
         players[1].EnableControl();
+    }
+
+    void Player1InflictDamage(float amt)
+    {
+        player2Health.TakeDamage(amt);
+    }
+
+    void Player2InflictDamage(float amt)
+    {
+        player1Health.TakeDamage(amt);
     }
 }
