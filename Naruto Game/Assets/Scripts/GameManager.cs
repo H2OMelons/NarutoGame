@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour {
         startWait = new WaitForSeconds(startDelay);
         endWait = new WaitForSeconds(endDelay);
         timerManager = GetComponent<TimerManager>();
-	}
+    }
 
     private void SpawnPlayers()
     {
@@ -88,7 +88,6 @@ public class GameManager : MonoBehaviour {
     public void TransitionToSceneSelection()
     {
         SceneManager.LoadScene("BackgroundChooser");
-        
     }
 
     public void TransitionToPlay()
@@ -111,6 +110,9 @@ public class GameManager : MonoBehaviour {
     {
         if (transitioningToPlay)
         {
+            AudioSource[] audio = GetComponents<AudioSource>();
+            audio[1].Stop();
+            audio[0].Play();
             transitioningToPlay = false;
             SetUpHealthbars();
             SpawnPlayers();

@@ -274,7 +274,7 @@ public class PlayerController : MonoBehaviour {
 
         // Move the character in the desired direction
         transform.Translate(Vector3.right * speed * Time.deltaTime);
-        transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
         // If character just entered the running state then set the 
         // appropriate flags and set the running animation

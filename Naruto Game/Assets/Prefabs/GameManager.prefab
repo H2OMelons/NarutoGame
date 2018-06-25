@@ -52,7 +52,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 138e836cb94d22541804e5a7cf235d40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 0}
 --- !u!114 &114976816958072814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,6 +109,8 @@ MonoBehaviour:
       type: 2}
     playerNumber: 2
     instance: {fileID: 0}
+  battleAudio: {fileID: 8300000, guid: 71011d9337eaa7440a385904876678d6, type: 3}
+  selectionAudio: {fileID: 8300000, guid: ae50b27cdeab6304e85c951440e05e50, type: 3}
   startDelay: 3
   endDelay: 3
   sceneSelection: 0
