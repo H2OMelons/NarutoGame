@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour {
 
     private TimerManager timerManager;
     private HealthColorManager player1Health, player2Health;
+    private Text endGameText;
 
     private void Awake()
     {
@@ -73,7 +75,9 @@ public class GameManager : MonoBehaviour {
     private void SetUpHealthbars()
     {
         player1Health = GameObject.Find("Player1HealthBar").GetComponent<HealthColorManager>();
+        player1Health.SetEndGameAction(EndGame);
         player2Health = GameObject.Find("Player2HealthBar").GetComponent<HealthColorManager>();
+        player2Health.SetEndGameAction(EndGame);
     }
 
     public void TransitionToCharacterSelection()
@@ -111,6 +115,7 @@ public class GameManager : MonoBehaviour {
             SetUpHealthbars();
             SpawnPlayers();
             StartCountdown();
+            endGameText = GameObject.Find("EndScreenText").GetComponent<Text>();
         }
         
     }
@@ -123,16 +128,43 @@ public class GameManager : MonoBehaviour {
 
     public void EndGame()
     {
-        //players[0].DisableControl();
-        //players[1].DisableControl();
         players[0].Reset();
         players[1].Reset();
+        timerManager.StopTimer();
+        if (player1Health.GetCurrHealth() > player2Health.GetCurrHealth())
+        {
+            DisplayEndScreen(0);
+        }
+        else if (player1Health.GetCurrHealth() < player2Health.GetCurrHealth())
+        {
+            DisplayEndScreen(1);
+        }
+        else
+        {
+            DisplayEndScreen(-1);
+        }
     }
 
     public void EnableControls()
     {
         players[0].EnableControl();
         players[1].EnableControl();
+    }
+
+    private void DisplayEndScreen(int winner)
+    {
+        if(winner < 0)
+        {
+            endGameText.text = "TIE";
+        }
+        else if(winner == 0)
+        {
+            endGameText.text = "PLAYER 1 WINS";
+        }
+        else
+        {
+            endGameText.text = "PLAYER 2 WINS";
+        }
     }
 
     void Player1InflictDamage(float amt)

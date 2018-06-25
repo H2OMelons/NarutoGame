@@ -85,4 +85,9 @@ public class TimerManager : MonoBehaviour {
     {
         startTime = (int)Time.time - time;
     }
+
+    public void StopTimer()
+    {
+        this.enabled = false;
+    }
 }

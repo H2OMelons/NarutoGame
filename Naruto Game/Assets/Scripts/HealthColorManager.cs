@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +13,7 @@ public class HealthColorManager : MonoBehaviour {
 
     private float currHealth = START_HEALTH;
     private bool dead = false;
+    private Action endGameAction;
 
 	// Use this for initialization
 	void Start () {
@@ -39,6 +40,7 @@ public class HealthColorManager : MonoBehaviour {
     private void OnDeath()
     {
         dead = true;
+        endGameAction();
     }
 
     public void TakeDamage(float dmg)
@@ -50,5 +52,15 @@ public class HealthColorManager : MonoBehaviour {
         {
             OnDeath();
         }
+    }
+
+    public void SetEndGameAction(Action action)
+    {
+        this.endGameAction = action;
+    }
+
+    public float GetCurrHealth()
+    {
+        return this.currHealth;
     }
 }
