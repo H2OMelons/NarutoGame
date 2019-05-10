@@ -4,8 +4,8 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
     Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
     Vendor:   NVIDIA
-    VRAM:     2019 MB
-    Driver:   23.21.13.8816
+    VRAM:     2010 MB
+    Driver:   23.21.13.9125
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\chenr\Documents\GitHub\NarutoGame\NarutoGame_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\chenr\Documents\GitHub\NarutoGame\NarutoGame_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -17,14 +17,22 @@ Platform assembly: C:\Users\chenr\Documents\GitHub\NarutoGame\NarutoGame_Data\Ma
 Loading C:\Users\chenr\Documents\GitHub\NarutoGame\NarutoGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\chenr\Documents\GitHub\NarutoGame\NarutoGame_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\chenr\Documents\GitHub\NarutoGame\NarutoGame_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.021 seconds
+- Completed reload, in  0.157 seconds
 Platform assembly: C:\Users\chenr\Documents\GitHub\NarutoGame\NarutoGame_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\chenr\Documents\GitHub\NarutoGame\NarutoGame_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 3.297975 ms
+UnloadTime: 1.303309 ms
+Going right
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Going right
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Going right
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -34,19 +42,19 @@ Going right
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.353975 ms
+UnloadTime: 0.336987 ms
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1809.
-Total: 0.559012 ms (FindLiveObjects: 0.077037 ms CreateObjectMapping: 0.086518 ms MarkObjects: 0.305777 ms  DeleteObjects: 0.088098 ms)
+Total: 0.554272 ms (FindLiveObjects: 0.071111 ms CreateObjectMapping: 0.072691 ms MarkObjects: 0.317629 ms  DeleteObjects: 0.092444 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.446419 ms
+UnloadTime: 0.455901 ms
 
 Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 1444.
-Total: 0.575604 ms (FindLiveObjects: 0.077037 ms CreateObjectMapping: 0.068345 ms MarkObjects: 0.327111 ms  DeleteObjects: 0.102716 ms)
+Total: 0.609185 ms (FindLiveObjects: 0.060839 ms CreateObjectMapping: 0.068345 ms MarkObjects: 0.362666 ms  DeleteObjects: 0.116938 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 164c -> priority: 1 
-  Thread -> id: 468c -> priority: 1 
-  Thread -> id: 61fc -> priority: 1 
-  Thread -> id: 5cc4 -> priority: 1 
+  Thread -> id: 3010 -> priority: 1 
+  Thread -> id: 20a8 -> priority: 1 
+  Thread -> id: 2e70 -> priority: 1 
+  Thread -> id: 123c -> priority: 1 

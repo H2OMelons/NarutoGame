@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/SasukeLair.unity
+- path: Assets/Scenes/BackgroundChooser.unity
   isLoaded: 1
   isActive: 1

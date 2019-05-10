@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 45
+  controlID: 24
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 711, y: 492}
-  m_MaxSize: {x: 18006, y: 14042}
+  m_MinSize: {x: 713, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 94
+  controlID: 91
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,8 +203,8 @@ MonoBehaviour:
     y: 0
     width: 318
     height: 731
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -456,9 +456,9 @@ MonoBehaviour:
     height: 710
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 96f1feff
-    m_LastClickedID: -69226
-    m_ExpandedIDs: 86f1feff8cf1feff96f1feff74f2feffcef4feff68f7feffa6f9feffeefbfeffe800ffff0601ffff9e11ffffb611ffffb413ffff7415ffffcafbffff00000000322f0000482f0000642f00007c2f00008e2f0000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 4ef3ffff08f4ffff5ef5ffffe6f5ffff6ef6fffff6f6ffff7ef7ffff14f8ffff28f8ffff2cf8ffffcafbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -477,7 +477,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - SasukeLair
+  - BackgroundChooser
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -507,7 +507,7 @@ MonoBehaviour:
     y: 92
     width: 316
     height: 710
-  m_ScrollPosition: {x: 0, y: 276.95508}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 201
@@ -551,19 +551,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Audio
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Audio
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\chenr\Documents\GitHub\NarutoGame\Naruto Game
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 47}
-    m_SelectedIDs: 30250000
-    m_LastClickedID: 9520
-    m_ExpandedIDs: 0000000002250000302500004225000012260000282a00008e2b0000942c0000d42d0000882e0000fa310000ffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 06280000
+    m_LastClickedID: 10246
+    m_ExpandedIDs: 000000000225000042250000322a0000982b0000e42d0000982e0000ca310000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -591,7 +591,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000002250000302500004225000012260000282a00008e2b0000942c0000d42d0000882e0000fa310000
+    m_ExpandedIDs: 000000000225000042250000322a0000982b0000e42d0000982e0000ca310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 2044000044430000e6430000ee250000b82500006a2700005027000082270000662700005c2700006e270000862700002c2800006e360000ce360000f2360000e6360000de360000ca360000c6360000da36000046370000623700006e3700004e3700006a3700003e3700004a370000423700005e370000ca3700005237000056370000da37000066370000c6370000ae370000de370000ce370000e6370000ba370000d2370000d6370000b2370000c2370000e2370000be370000b6370000b03b000062360000ee360000f63600007236000022360000222e000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -643,7 +643,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 58}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 96
   m_DirectoriesAreaWidth: 179
 --- !u!114 &20
@@ -749,14 +749,14 @@ MonoBehaviour:
     width: 877
     height: 439
   m_SceneLighting: 1
-  lastFramingTime: 591.2343596358328
+  lastFramingTime: 21621.462005333335
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.08394479, y: -0.032042086, z: 0}
+    m_Target: {x: 0.03263332, y: 0.13297462, z: 0.23281336}
     speed: 2
-    m_Value: {x: 0.08394479, y: -0.032042086, z: 0}
+    m_Value: {x: 0.03263332, y: 0.13297462, z: 0.23281336}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -771,21 +771,21 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
-      speed: 2
-      m_Value: 0
-    zGrid:
       m_Target: 1
       speed: 2
       m_Value: 1
+    zGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.8264832
+    m_Target: 4.1682205
     speed: 2
-    m_Value: 2.8264832
+    m_Value: 4.1682205
   m_Ortho:
     m_Target: 1
     speed: 2
